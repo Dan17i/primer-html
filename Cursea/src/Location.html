@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="loginStyle.css">
+    <title>Mini Login</title>
+</head>
+<body>
+    <!-- Encabezado principal -->
+    <h1>Iniciemos con el registro</h1>
+    
+    <!-- Formulario de inicio de sesión -->
+    <form action="/registro" method="post">
+        <!-- Campo para el nombre de usuario -->
+        <label for="userName">User name</label><br>
+        <input type="text" name="userName" id="userName" alt="Username"><br>
+
+        <!-- Campo para la contraseña -->
+        <label for="password">Password</label><br>
+        <input type="password" name="password" id="password" alt="Password"><br>
+
+        <!-- Botón de enviar -->
+        <input type="submit"><br>
+    </form> 
+
+    <div class="radio-container">
+    <!-- Preguntas adicionales -->
+    <input type="radio" name="response" id="ringth" value="right">
+    <label for="ringth">¿Está usted contento con el resultado?</label><br>
+    <input type="radio" name="response" id="left" value="left">
+    <label for="left">¿Desea que le haga otra modificación?</label>
+    </div>
+     <!-- Mensaje informativo -->
+    <p>
+        <!-- Estilo para resaltar el mensaje -->
+        <span style="color: red;">Este es el primer login que hago</span>
+    </p> 
+</body>
+</html>

@@ -1,0 +1,55 @@
+/* Estilos para los párrafos */
+p {
+  color: rgb(255, 232, 25);
+}
+
+/* Estilos para los encabezados */
+h1 {
+  color: blueviolet;
+  font-family: "Courier New", monospace;
+  font-size: 24px; /* Aumento del tamaño de fuente */
+  text-align: center;
+}
+
+h2 {
+  color: rgb(255, 0, 0);
+}
+
+/* Estilos específicos para el encabezado con id "primero" */
+#primero {
+  color: rgba(127, 255, 0, 0.5); /* Cambio de la opacidad */
+  text-transform: uppercase;
+}
+
+/* Estilos para encabezados dentro de elementos con id "blog" */
+#blog h1 {
+  color: hsl(212, 77%, 66%);
+}
+
+/* Estilos para encabezados directamente dentro de elementos con id "blog1" */
+#blog1 > h1 {
+  color: rgb(255, 0, 221);
+  text-decoration: underline red solid 5px;
+}
+
+/* Estilos para elementos de navegación */
+.navigation { 
+  margin: 10px; /* Aumento del margen */
+  width: 100%; /* Ancho completo */
+  text-align: center; /* Alineación central del texto */
+}
+
+/* Estilos para los div */
+div {
+  border: 1px solid black;
+  padding: 10px; /* Aumento del relleno */
+}
+
+/* Estilos para las tablas */
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 10px; /* Aumento del relleno */
+}

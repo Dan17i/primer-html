@@ -1,0 +1,85 @@
+/* Estilos para el encabezado principal */
+h1 {
+    text-align: center;
+    color: #333; /* Cambia el color según tus preferencias */
+    font-size: 24px; /* Tamaño de fuente más grande */
+    font-family: 'Arial', sans-serif; /* Tipo de letra Arial */
+}
+
+p {
+    text-align: center; /* Centra el texto dentro del párrafo */
+}
+/* Estilos para el mensaje informativo */
+p span {
+    color: red; /* Color rojo para resaltar el mensaje */
+    font-weight: bold; /* Texto en negrita para mayor énfasis */
+
+}
+
+form {
+    margin: 0 auto; /* Centra el formulario horizontalmente */
+    width: 300px; /* Ajusta el ancho según sea necesario */
+    padding: 20px; /* Espacio interno dentro del formulario */
+    border: 2px solid #ccc; /* Borde más grueso */
+    border-radius: 10px; /* Bordes más redondeados */
+    background-color: #f9f9f9; /* Fondo claro para el formulario */
+    padding-left: 20px; /* Espacio adicional a la izquierda */
+    padding-right: 20px; /* Espacio adicional a la derecha */
+}
+
+.radio-container {
+    margin-bottom: 15px; /* Más espacio entre los elementos de radio */
+    text-align: center; /* Centra los elementos de radio horizontalmente */
+}
+
+/* Estilos para las etiquetas de texto */
+label {
+    display: block; /* Hace que las etiquetas se muestren en una línea nueva */
+    font-weight: bold;
+    margin-bottom: 5px; /* Espacio después de cada etiqueta */
+}
+
+/* Estilos para los campos de entrada */
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px; /* Más espacio entre los campos de entrada */
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box; /* Incluye padding y borde en el ancho total */
+}
+
+/* Estilos para el botón de enviar */
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #007bff; /* Color de fondo azul */
+    color: white; /* Color del texto blanco */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transición suave al cambiar de color */
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3; /* Color de fondo más oscuro al pasar el mouse */
+}
+
+/* Estilos para los enlaces dentro del formulario */
+a {
+    color: #007bff; /* Color azul para los enlaces */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Transición suave al cambiar de color */
+}
+
+a:hover {
+    color: #0056b3; /* Color más oscuro al pasar el mouse */
+}
+
+/* Estilos para los mensajes de error */
+.login-error {
+    color: red;
+    margin-top: 10px; /* Más espacio antes del mensaje de error */
+    font-size: 14px; /* Tamaño de fuente más grande para visibilidad */
+}

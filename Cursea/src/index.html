@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#09f">
+    <meta name="description" content="Es un sitio de intento">
+    <link rel="stylesheet" href="Style.css">
+    <title>Aprender HTML</title>
+    <link rel="icon" href="imagenes/aprender.jpg" type="image/jpeg">
+
+    <style>
+      body {
+        background: rgb(153, 139, 152);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Títulos y párrafos -->
+    <h1 id="primero">Primer menú</h1>
+    <p>Es mi primer sitio<br>Y todo va bien</p>
+    <h2>Una</h2>
+    <p>Otra forma de hacerlo<br>Mi color favorito es el <b>rojo</b>, <b>amarillo</b> y <b>azul</b>.</p>
+    <h3>Dos</h3>
+    <p>Mi última idea XD<br>El <strong>café</strong> está listo.</p>
+    <p>The three core technologies of the Internet are <b>HTML</b>, <b>CSS</b>, and <b>JavaScript</b>.</p>
+
+    <!-- Cursiva y énfasis -->
+    <h2>Letras</h2>
+    <p>Wake up <em>now</em>! The term <i>HTML</i> stands for HyperText Markup Language.</p>
+    <p>I <em>really</em> want ice cream.</p>
+    <p>My favorite book is <i>Dracula</i>.</p>
+
+    <!-- Listas -->
+    <h3>Tipos de listas</h3>
+    <ul>
+      <li>Opciones</li>
+      <li>Decisiones</li>
+      <li>Ideales</li>
+      <li>Objetivos</li>
+    </ul>
+
+    <!-- División de contenido -->
+    <h2>Etiquetas div</h2>
+    <div>
+      <p>Este es el párrafo con el índice div</p>
+    </div>
+
+    <!-- Ancla para navegación -->
+    <h1>Ruta 2 pestaña</h1>
+    <a href="Location.html">Registro</a>
+
+    <!-- Imágenes -->
+    <h2>Imágenes</h2>
+    <img title="Foto de Martín Lutero" alt="Describe la reforma de Martín Lutero" src="imagenes/Reformation Day.jpg" width="200" height="135">
+
+    <!-- Tablas -->
+    <h1>Tablas</h1>
+    <table border="1">
+      <tr>
+        <th>DIOS</th>
+        <th>Primero</th>
+      </tr>
+      <tr>
+        <td>Estudiar</td>
+        <td>8 horas</td>
+      </tr>
+      <tr>
+        <td>Dormir</td>
+        <td>8 horas</td>
+      </tr>
+    </table>
+
+    <!-- Formularios -->
+    <h1>Formularios</h1>
+    <input type="checkbox" id="aprenderUni" name="AprenderUni" value="AprenderUniversidad">
+    <label for="aprenderUni">¿Qué tal si seleccionas aprender?</label><br>
+    <input type="checkbox" id="iglesia" name="iglesia" value="iglesiaCongregar">
+    <label for="iglesia">¿Qué tal si mejor vas a la iglesia?</label><br>
+    <label for="number">Ingrese el número:</label>
+    <input type="number" id="number" name="El numero es" /><br>
+    <label for="correo">Su correo es:</label>
+    <input type="email" id="correo" name="correo" /><br>
+    <label for="file">Suba el archivo:</label>
+    <input type="file" id="file" name="archivo" /><br>
+    <label for="color">Suba el color:</label>
+    <input type="color" id="color" name="color" /><br>
+    <label for="horaLocal">La hora local es:</label>
+    <input type="datetime-local" id="horaLocal" name="horaLocal" /><br>
+    <label for="themonth">El mes es:</label>
+    <input type="month" id="themonth" name="themonth" /><br>
+    <label for="textarea">Área de texto:</label>
+    <textarea id="textarea" name="multilinea" rows="5"></textarea><br>
+    <label for="food">Seleccione una opción:</label>
+    <select id="food" name="food">
+      <option value="1">Option 1</option>
+      <option value="2">Option 2</option>
+      <option value="3">Option 3</option>
+    </select><br>
+    <div class="mi-clase">
+      <p>Esta es la clase.</p>
+    </div>
+
+    <!-- Contenido anidado -->
+    <div id="blog">
+      <h1>Latest News</h1>
+      <div>
+        <h2>Today's Weather</h2>
+        <p>The weather will be sunny</p>
+      </div>
+      <p>Subscribe for more news</p>
+    </div>
+    <div>
+      <h1>Archives</h1>
+    </div>
+
+    <!-- Selectores secundarios -->
+    <h1>Selectores secundarios</h1>
+    <div id="blog1">
+      <h1>Latest News</h1>
+      <div>
+        <h2>Today's Weather</h2>
+        <p>The weather will be sunny</p>
+      </div>
+      <p>Subscribe for more news</p>
+    </div>
+
+    <!-- Formularios con fieldsets -->
+    <fieldset>
+      <legend>Información personal</legend>
+      <div>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Ingrese el nombre" required>
+      </div>
+      <div>
+        <label for="email">Correo:</label>
+        <input type="email" id="email" name="email" placeholder="Ingrese el correo" required>
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>Información adicional</legend>
+      <div>
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" placeholder="Ingrese el teléfono" required>
+      </div>
+      <div>
+        <label for="funcion">¿Por qué aprendes HTML?</label>
+        <input list="funcion" id="funcion" name="funcion">
+        <datalist id="funcion-list">
+          <option value="aprender"></option>
+          <option value="curiosidad"></option>
+          <option value="trabajo"></option>
+          <option value="educación"></option>
+        </datalist>
+      </div>
+    </fieldset>
+
+    <!-- Multimedia: video y audio -->
+    <h1>Multimedia</h1>
+    <h2>Video</h2>
+    <video width="320" height="240" controls muted>
+      <source src="movie.mp4" type="video/mp4">
+      Tu navegador no soporta el elemento de video.
+    </video>
+    
+    <h2>Audio</h2>
+    <audio controls>
+      <source src="audio.mp3" type="audio/mpeg">
+      Tu navegador no soporta el elemento de audio.
+    </audio>
+
+    <!-- Enlaces a otras partes del documento -->
+    <h1>Enlaces</h1>
+    <a href="#primero">Ir al primer menú</a><br>
+    <a href="https://www.example.com" target="_blank">Visitar Example.com</a>
+
+    <!-- Inputs adicionales -->
+    <h1>Inputs adicionales</h1>
+    <label for="range">Seleccione un rango:</label>
+    <input type="range" id="range" name="range" min="0" max="100"><br>
+    <label for="search">Buscar:</label>
+    <input type="search" id="search" name="search"><br>
+    <label for="tel">Teléfono:</label>
+    <input type="tel" id="tel" name="tel"><br>
+    <label for="url">URL:</label>
+    <input type="url" id="url" name="url"><br>
+
+    <!-- Elementos semánticos -->
+    <h1>Elementos semánticos</h1>
+    <article>
+      <header>
+        <h2>Este es el encabezado de un artículo</h2>
+      </header>
+      <p>Este es el contenido del artículo.</p>
+      <footer>
+        <p>Este es el pie de página del artículo.</p>
+      </footer>
+    </article>
+    <section>
+      <header>
+        <h2>Sección de contenido</h2>
+      </header>
+      <p>Contenido de la sección.</p>
+    </section>
+    <aside>
+      <h2>Contenido adicional</h2>
+      <p>Este es el contenido adicional relacionado.</p>
+    </aside>
+    <footer>
+      <p>Este es el pie de página del documento.</p>
+    </footer>
+
+    <!-- Formularios con más tipos de entradas -->
+    <h1>Más tipos de entradas en formularios</h1>
+    <label for="date">Seleccione una fecha:</label>
+    <input type="date" id="date" name="date"><br>
+    <label for="week">Seleccione una semana:</label>
+    <input type="week" id="week" name="week"><br>
+    <label for="time">Seleccione una hora:</label>
+    <input type="time" id="time" name="time"><br>
+
+    <!-- Lista de definición -->
+    <h1>Lista de definición</h1>
+    <dl>
+      <dt>HTML</dt>
+      <dd>Lenguaje de marcado de hipertexto</dd>
+      <dt>CSS</dt>
+      <dd>Hojas de estilo en cascada</dd>
+      <dt>JavaScript</dt>
+      <dd>Lenguaje de programación para la web</dd>
+    </dl>
+
+    <!-- Elemento de progreso -->
+    <h1>Elemento de progreso</h1>
+    <progress id="file" value="32" max="100">32%</progress><br>
+
+    <!-- Elemento de barra de progreso -->
+    <h1>Elemento de barra de progreso</h1>
+    <meter value="0.6">60%</meter>
+
+    <!-- Contenido incrustado -->
+    <h1>Contenido incrustado</h1>
+    <iframe src="https://www.example.com" width="300" height="200" title="Iframe Example"></iframe>
+
+    <!-- Etiquetas especiales de HTML5 -->
+    <h1>Etiquetas especiales de HTML5</h1>
+    <mark>Texto resaltado</mark><br>
+    <del>Este texto está eliminado</del><br>
+    <ins>Este texto está insertado</ins><br>
+    <sub>Subíndice</sub><br>
+    <sup>Superíndice</sup><br>
+
+    <!-- Etiqueta de cuadro de diálogo -->
+    <h1>Cuadro de diálogo</h1>
+    <dialog open>
+      <p>Este es un cuadro de diálogo abierto.</p>
+      <button>Close</button>
+    </dialog>
+  </body>
+</html>
+
